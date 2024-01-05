@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('checkout from GIT'){
             steps{
-               git branch: 'main', credentialsId: 'testpipeline', url: 'https://github.com/Nareshnazz/JenkinsCICD.git'
+               git branch: 'main', credentialsId: 'testpipeline', url: 'URL'
             }
         }
         stage('Terraform Init'){
